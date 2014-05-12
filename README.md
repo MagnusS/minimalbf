@@ -13,5 +13,5 @@ http://doi.acm.org/10.1145/1998476.1998483
 
 Short summary:
 
-The minimal Bloom filter has a 50% false positive probability, but by changing the number of padding bits, the actual items that collide (produce false positives) can be varied. This allows us to create a pipeline of minimal Bloom filters that each have a 50% false positive probability, but when combined results in a much lower false positive probability. The positive probability of the pipeline can be dynamically adapted without requiring additional hash functions. This makes it useful for set reconciliation in computer networks where minimal Bloom filters can be exchanged until synchronizing sets are equal.
+The minimal Bloom filter has a 50% false positive probability, but by changing the number of padding bits, the actual items that collide (produce false positives) can be varied. This allows us to create a pipeline of minimal Bloom filters that each have a 50% false positive probability, but when combined results in a much lower false positive probability. The positive probability of the pipeline can be dynamically adapted without requiring additional hash functions. This makes it useful for set reconciliation in computer networks where minimal Bloom filters can be exchanged until the sets are equal.
 
