@@ -34,7 +34,12 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 '''
 
-''' Pipelined Minimal Bloom filters. Creates K minimal Bloom filters, each with one more padding bit than the previous. The minimal Bloom filters will each have a false positive probability of about 50%, but as the false positives vary between the filters (due to padding bits) they can be combined to reduce the total false positive probability '''
+''' Pipelined Minimal Bloom filters. 
+
+Creates K minimal Bloom filters, each with one more padding bit than the 
+previous. The minimal Bloom filters will each have a false positive probability 
+of about 50%, but as the false positives vary between the filters (due to 
+padding bits) they can be combined to reduce the total false positive probability '''
 
 class MinimalBFPipe(object):
         bfs = None
@@ -75,7 +80,8 @@ class MinimalBF(object):
         n = None
         bits = None
 
-        ''' Initialize the minimal Bloom filter with a list of hashes and a number of padding_bits. The hashes should be randomly distributed and much larger than the length of the minimal Bloom filter. '''
+        ''' Initialize the minimal Bloom filter with a list of hashes and a number of padding_bits. The hashes should be randomly 
+        distributed and much larger than the length of the minimal Bloom filter. '''
         def __init__(self, list_of_hashes, padding_bits=0):
                 self.n = len(list_of_hashes)
 
