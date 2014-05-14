@@ -35,7 +35,7 @@ import random
 
 # Set reconciliation example with two nodes
 #
-# Creates a random set in node A with 10000 entries. Then copies half of the set 
+# Creates a random set in node A with 100 000 entries. Then copies half of the set 
 # to node B and attempts to use minimal Bloom filters to discover the rest of the 
 # missing items. 
 
